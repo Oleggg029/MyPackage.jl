@@ -9,19 +9,7 @@ using CImGui.CSyntax
 using CImGui.CSyntax.CStatic
 import CImGui.LibCImGui: ImGuiCond_Always, ImGuiCond_Once
 
-include("Renderer.jl")
-using .Renderer
-include("readfiles.jl")
-using Dates, DataFrames
-#t1 = readhdr("./data/breath_base/ox113519.hdr")
-#string(t1[5])
-include("common_widgets.jl")
-include("cursor.jl")
-include("my_plot.jl")
-include("event_tab.jl")
-include("test_buttons.jl")
-include("file_table.jl")
-include("content_file.jl")
+
 # привязать состояния глобальные
 const USERDATA = Dict{String, Any}(
     "xy1" => (zeros(Float32, 1001), zeros(Float32, 1001)),
